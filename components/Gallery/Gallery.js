@@ -29,7 +29,7 @@ export const Gallery = ({ columns, cropImages, items }) => {
           <Image
             className="object-cover"
             src={item.attributes.url}
-            alt={item.attributes.alt}
+            alt={item.attributes.alt || ""}
             width={maxWidth || item.attributes.width}
             height={maxHeight || item.attributes.height}
           />
